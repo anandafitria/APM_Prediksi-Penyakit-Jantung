@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-    <link rel="stylesheet" href="static/styles.css">
+    <link rel="stylesheet" href="{{url_for('static', filename='styles.css')}}">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -21,18 +21,18 @@
                         <div class="wrap-contact100">
                             <form class="contact100-form validate-form" action="/" method="GET">
                                 {% if finalData == 1 %}
-                                <span class="contact100-form-title">
+                                <span class="contact100-form-title text-center">
                                     POSITIF PENYAKIT JANTUNG
                                 </span>
 
                                 {% else %}
-                                <span class="contact100-form-title">
+                                <span class="contact100-form-title text-center">
                                     NEGATIF PENYAKIT JANTUNG
                                 </span>
 
                                 {% endif %}
                                 <div class="form-group text-center mt-3 pt-3">
-                                    <button class="btnContact" type="submit">Selesai</button>
+                                    <button class="btnContact" href="index.html">Selesai</button>
                                 </div>
                             </form>
                         </div>

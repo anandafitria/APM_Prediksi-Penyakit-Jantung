@@ -18,46 +18,52 @@
            <div class="row">
                 <div class="col-md-12">
                     <div class="form-group">
-                        <input type="text" name="umur" class="form-control" placeholder="Umur *" value="" />
+                        <input type="text" name="Age" class="form-control" placeholder="Umur *" value="" />
                     </div>
                     <div class="form-group">
-                        <input type="text" name="jenisKelamin" class="form-control" placeholder="Jenis Kelamin *" value="" />
+                        <input type="text" name="Sex" class="form-control" placeholder="Jenis Kelamin *" value="" />
                     </div>
                     <p><option value="1">Laki Laki Isi 1</option>
                         <option value="2">Perempuan Isi 0</option></p>
                     <div class="form-group">
-                        <input type="text" name="tipeSakitDada" class="form-control" placeholder="Tipe Sakit Dada *" value="" />
+                        <input type="text" name="ChestPainType" class="form-control" placeholder="Tipe Sakit Dada *" value="" />
                     </div>
                     <p>
                         <option value="2">Atypical Angina (ATA) Isi 0</option>
                         <option value="3">Non-Anginal Pain (NAP) Isi 1</option>
                         <option value="4">Asymptomatic (ASY) Isi 2</option> 
                         <option value="1">Typical Angina (TA) Isi 3</option></p>
+                        <div class="form-group">
+                            <input type="text" name="RestingBP" class="form-control" placeholder="Tekanan Darah *" value="" />
+                        </div>
                     <div class="form-group">
-                        <input type="text" name="kadarKolesterol" class="form-control" placeholder="Kadar Kolesterol *" value="" />
+                        <input type="text" name="Cholesterol" class="form-control" placeholder="Kadar Kolesterol *" value="" />
                     </div>
                     <div class="form-group">
-                        <input type="text" name="tekananDarah" class="form-control" placeholder="Tekanan Darah *" value="" />
+                        <input type="text" name="FastingBS" class="form-control" placeholder="FastingBS *" value="" />
                     </div>
                     <div class="form-group">
-                        <input type="text" name="detakJantung" class="form-control" placeholder="Detak Jantung *" value="" />
+                        <input type="text" name="RestingECG" class="form-control" placeholder="RestingECG *" value="" />
                     </div>
                     <div class="form-group">
-                        <input type="text" name="rasaSakitDiDada" class="form-control" placeholder="Rasa Sakit di Dada *" value="" />
+                        <input type="text" name="MaxHR" class="form-control" placeholder="Detak Jantung *" value="" />
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="ExerciseAngina" class="form-control" placeholder="Rasa Sakit di Dada *" value="" />
                     </div>
                     <p><option value="1">Ada Isi 1</option>
                         <option value="2">Tidak Ada Isi 0</option></p>
                       <div class="form-group">
-                        <input type="text" name="txtOldpeak" class="form-control" placeholder="Oldpeak *" value="" />
+                        <input type="text" name="Oldpeak" class="form-control" placeholder="Oldpeak *" value="" />
                     </div>
                     <div class="form-group">
-                        <input type="text" name="ST_Slope" class="form-control" placeholder="Rasa Sakit di Dada *" value="" />
+                        <input type="text" name="ST_Slope" class="form-control" placeholder="ST_Slope *" value="" />
                     </div>
                     <p>  <option value="2">Flat Isi 0</option>
                         <option value="1">Up Isi 1</option>
                         <option value="2">Down Isi 2</option></p>
                     <div class="form-group text-center mt-3 pt-3">
-                        <button class="btnContact" type="submit" href="{{ url_for('index') }}">Cek Prediksi</button>
+                        <button class="btnContact" type="submit" href="hasil.html">Cek Prediksi</button>
                     </div>
                 </div>
             </div>

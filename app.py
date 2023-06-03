@@ -14,18 +14,19 @@ def index():
         with open('knn_pickle', 'rb') as r:
             model = pickle.load(r)
 
-        umur = float(request.form['Age'])
-        jenisKelamin = float(request.form['Sex'])
-        tipeSakitDada = float(request.form['ChestPainType'])
-        kadarKolesterol = float(request.form['Cholesterol'])
-        tekananDarah = float(request.form['RestingBP'])
-        detakJantung = float(request.form['MaxHR'])
-        rasaSakitDiDada = float(request.form['ExerciseAngina'])
+        Age = float(request.form['Age'])
+        Sex = float(request.form['Sex'])
+        ChestPainType = float(request.form['ChestPainType'])
+        RestingBP = float(request.form['RestingBP'])
+        Cholesterol = float(request.form['Cholesterol'])
+        FastingBS = float(request.form['FastingBS'])
+        RestingECG = float(request.form['RestingECG'])
+        MaxHR = float(request.form['MaxHR'])
+        ExerciseAngina = float(request.form['ExerciseAngina'])
         Oldpeak = float(request.form['Oldpeak'])
         ST_Slope = float(request.form['ST_Slope'])
-        riwayatJantung = float(request.form['HeartDisease'])
 
-        datas = np.array((umur,jenisKelamin,tipeSakitDada, kadarKolesterol, tekananDarah, detakJantung, rasaSakitDiDada, Oldpeak, ST_Slope, riwayatJantung))
+        datas = np.array((Age, Sex, ChestPainType, RestingBP,Cholesterol, FastingBS, RestingECG, MaxHR, ExerciseAngina, Oldpeak, ST_Slope))
         datas = np.reshape(datas, (1, -1))
 
         isJantung = model.predict(datas)
