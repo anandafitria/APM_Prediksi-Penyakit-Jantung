@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link rel="stylesheet" href="static/styles.css">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediksi Penyakit Jantung</title>
+</head>
+<body>
+    <div class="container contact-form">
+        <div class="contact-image">
+            <img src="static/jantung.png"/>
+        </div>
+        <form method="post">
+            <h3>Prediksi Penyakit Jantung</h3><br>
+           <div class="row">
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <input type="text" name="umur" class="form-control" placeholder="Umur *" value="" />
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="jenisKelamin" class="form-control" placeholder="Jenis Kelamin *" value="" />
+                    </div>
+                    <p><option value="1">Laki Laki Isi 1</option>
+                        <option value="2">Perempuan Isi 0</option></p>
+                    <div class="form-group">
+                        <input type="text" name="tipeSakitDada" class="form-control" placeholder="Tipe Sakit Dada *" value="" />
+                    </div>
+                    <p>
+                        <option value="2">Atypical Angina (ATA) Isi 0</option>
+                        <option value="3">Non-Anginal Pain (NAP) Isi 1</option>
+                        <option value="4">Asymptomatic (ASY) Isi 2</option> 
+                        <option value="1">Typical Angina (TA) Isi 3</option></p>
+                    <div class="form-group">
+                        <input type="text" name="kadarKolesterol" class="form-control" placeholder="Kadar Kolesterol *" value="" />
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="tekananDarah" class="form-control" placeholder="Tekanan Darah *" value="" />
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="detakJantung" class="form-control" placeholder="Detak Jantung *" value="" />
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="rasaSakitDiDada" class="form-control" placeholder="Rasa Sakit di Dada *" value="" />
+                    </div>
+                    <p><option value="1">Ada Isi 1</option>
+                        <option value="2">Tidak Ada Isi 0</option></p>
+                      <div class="form-group">
+                        <input type="text" name="txtOldpeak" class="form-control" placeholder="Oldpeak *" value="" />
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="ST_Slope" class="form-control" placeholder="Rasa Sakit di Dada *" value="" />
+                    </div>
+                    <p>  <option value="2">Flat Isi 0</option>
+                        <option value="1">Up Isi 1</option>
+                        <option value="2">Down Isi 2</option></p>
+                    <div class="form-group text-center mt-3 pt-3">
+                        <button class="btnContact" type="submit" href="{{ url_for('index') }}">Cek Prediksi</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+</div>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</body>
+</html>
