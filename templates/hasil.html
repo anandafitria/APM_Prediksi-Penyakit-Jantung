@@ -14,25 +14,23 @@
             <img src="static/jantung.png"/>
         </div>
         <form method="post">
-            <h3>Prediksi Penyakit Jantung</h3>
            <div class="row">
                 <div class="col-md-12">
                     <div class="container-contact100">
                         <div class="wrap-contact100">
                             <form class="contact100-form validate-form" action="/" method="GET">
                                 {% if finalData == 1 %}
-                                <span class="contact100-form-title text-center">
-                                    POSITIF PENYAKIT JANTUNG
+                                <span class="contact100-form-title text-center mt-5">
+                                    <h3 class="text-center pt-5">POSITIF PENYAKIT JANTUNG</h3>
                                 </span>
 
                                 {% else %}
-                                <span class="contact100-form-title text-center">
-                                    NEGATIF PENYAKIT JANTUNG
+                                <span class="contact100-form-title text-center mt-5">
+                                    <h3 class="text-center pt-5">NEGATIF PENYAKIT JANTUNG</h3>
                                 </span>
 
                                 {% endif %}
                                 <div class="form-group text-center mt-3 pt-3">
-                                    <button class="btnContact" href="index.html">Selesai</button>
                                 </div>
                             </form>
                         </div>
